@@ -1,0 +1,115 @@
+.breadcrumb{
+    background-color: #fff;
+}
+
+.breadcrumb > li + li:before {
+	color: #ccc;
+	font-family: "Glyphicons Halflings";
+	content: "\e080";
+	font-size: 12px;
+}
+
+.navbar {
+    background-color: #DCDCDC;
+
+}
+
+.region {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.menu__item {
+    margin-right: 20px;
+}
+
+.search-title {
+    font-size: 40px;
+}
+
+.request {
+    margin-bottom: 25px;
+}
+
+.create_request {
+    background-color: #f8f8f8;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+
+.feedback-button {
+    margin: 38px auto;
+}
+
+.footer {
+    margin: 38px auto;
+    background-color: #f8f8f8;
+    border: 1px solid grey;
+}
+
+.request-title {
+    font-size: large;
+}
+
+button.large {
+    border-radius: 25px;
+    width: 270px;
+}
+
+
+.company-info {
+    border: 2px solid #ccc;
+}
+
+.company-info > div > span {
+        margin-top: 50%;
+        border: 1px solid #ccc;
+        padding: 10px;
+}
+.company-info > div > p {
+        margin-bottom: 5px;
+}
+
+.gotorequests {
+    vertical-align: middle;
+}
+
+.nav-tabs {
+    display:block;
+}
+
+.catalog a {
+	font-size: 18px;
+}
+
+.carousel-wrapper{
+    margin-right: 30px;
+}
+
+.carousel-inner{
+    outline: 3px solid #ccc;
+}
+
+.carousel-control {
+    background-image: none !important;
+    color: grey;
+    font-size: 48px;
+}
+
+.carousel-control.right{
+    position: absolute;
+	  right: -65px;
+    top: 25px;
+}
+
+.carousel-control.left {
+	position: absolute;
+	left: -65px;
+	top: 25px;
+}
+
+.glyphicon-home{
+    font-size: 50px;
+    color: #ccc;
+}

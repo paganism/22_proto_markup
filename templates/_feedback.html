@@ -1,0 +1,37 @@
+<div class="feedback">
+  <div class="container">
+    <div class="row">
+      <div class="carousel_wrapper col-md-6 col-md-offset-3">
+        <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+          <div class="carousel-inner">
+            {% for item in range(items) %}
+            <div class="item {% if item == 0 %} active {% endif %}">
+              <div class="col-md-2 text-center">
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <div class="col-md-8">
+                <p><b>{{ feedback_author }}</b></p>
+                <p>{{ feedback_text }}</p>
+              </div>
+
+            </div>
+            {% endfor %}
+          </div>
+
+          <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+          </a>
+          <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+          </a>
+        </div>
+      </div>
+    <div class="col-md-2 feedback-button text-right">
+      <button type="submit" class="btn btn-default">Оставить отзыв</button>
+    </div>
+    </div>
+  </div>
+</div>

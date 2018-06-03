@@ -1,0 +1,76 @@
+<title>{{ title }} </title>
+<div class="request">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-1 logo">
+        <div class="col-md-2 text-center">
+          <span class="glyphicon glyphicon-home">Логотип</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 text-left col-md-offset-2 request-title"><h1>Заявки</h1></div>
+      <div class="col-md-4 col-md-offset-2">
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Раздел: Все<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">one</a></li>
+            <li><a href="#">two</a></li>
+            <li><a href="#">three</a></li>
+            <li><a href="#">four</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 col-md-offset-1">Регион:
+        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Новосибирск и область<b class="caret"></b></a>
+      </div>
+      <div class="request">
+        {% for comment in range(comments) %}
+
+        <div class="col-md-8 col-md-offset-2 comment-data">
+          <!--<hr>-->
+          <div class="row">
+            <hr>
+            <div class="col-md-5">
+              {{ comment_time }}
+            </div>
+            <div class="col-md-5 text-right">
+              <div class="to-bookmarks">
+                <a href="#"><span class="glyphicon glyphicon-star"></span>В закладки</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <p>{{ request_text }}</p>
+              <p>{{ request_name }}</p>
+              <button type="submit" class="btn btn-default">Показать телефон</button>
+              <span class="text">{{ count_views }} просмотров</span>
+            </div>
+
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-default large">Показать еще</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 text-center">
+        <nav aria-label="Все заявки">
+          <ul class="pagination">
+            <li><a href="#"> &lt; </a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">..</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#"> &gt; </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
