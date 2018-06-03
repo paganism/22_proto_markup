@@ -1,6 +1,13 @@
 # Suppliers in Novosibirsk
 
-[TODO. There will be project description]
+This site just demonstrates markup
+link https://paganism.github.io/22_proto_markup/
+
+# Start
+```
+pip3 install -r requirements
+python3.5 assemble.py
+```
 
 # Project Goals
 
