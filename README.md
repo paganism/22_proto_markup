@@ -1,7 +1,7 @@
 # Suppliers in Novosibirsk
 
 This site just demonstrates markup
-link https://paganism.github.io/22_proto_markup/
+link https://paganism.github.io/22_proto_markup/static
 
 # Start
 ```
