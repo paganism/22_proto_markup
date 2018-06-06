@@ -3,10 +3,10 @@
 }
 
 .breadcrumb > li + li:before {
-	color: #ccc;
-	font-family: "Glyphicons Halflings";
-	content: "\e080";
-	font-size: 12px;
+    color: #ccc;
+    font-family: "Glyphicons Halflings";
+    content: "\e080";
+    font-size: 12px;
 }
 
 .navbar {
@@ -80,7 +80,7 @@ button.large {
 }
 
 .catalog a {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 .carousel-wrapper{
@@ -99,14 +99,14 @@ button.large {
 
 .carousel-control.right{
     position: absolute;
-	  right: -65px;
+      right: -65px;
     top: 25px;
 }
 
 .carousel-control.left {
-	position: absolute;
-	left: -65px;
-	top: 25px;
+    position: absolute;
+    left: -65px;
+    top: 25px;
 }
 
 .glyphicon-home{
