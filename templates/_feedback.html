@@ -1,9 +1,8 @@
 <div class="feedback">
   <div class="container">
-    <div class="row">
-      <div class="carousel_wrapper col-md-6 col-md-offset-3">
+    <div class="col-md-12">
+      <div class="col-md-6 col-sm-10 col-xs-12 col-md-offset-3 carousel_wrapper">
         <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-
           <div class="carousel-inner">
             {% for item in range(items) %}
             <div class="item {% if item == 0 %} active {% endif %}">
@@ -29,9 +28,9 @@
           </a>
         </div>
       </div>
-    <div class="col-md-2 feedback-button text-right">
-      <button type="submit" class="btn btn-default">Оставить отзыв</button>
-    </div>
+      <div class="col-md-2 col-sm-2 col-xs-12 text-center">
+        <button type="submit" class="btn btn-default">Оставить отзыв</button>
+      </div>
     </div>
   </div>
 </div>

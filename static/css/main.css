@@ -55,6 +55,7 @@
 button.large {
     border-radius: 25px;
     width: 270px;
+    margin-top: 30px;
 }
 
 
@@ -99,7 +100,7 @@ button.large {
 
 .carousel-control.right{
     position: absolute;
-      right: -65px;
+    right: -65px;
     top: 25px;
 }
 
