@@ -1,17 +1,17 @@
 <div class="feedback">
   <div class="container">
     <div class="col-md-12">
-      <div class="col-md-6 col-sm-10 col-xs-12 col-md-offset-3 carousel_wrapper">
+      <div class="col-md-6 col-sm-10 col-xs-10 col-md-offset-3 carousel_wrapper">
         <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
           <div class="carousel-inner">
-            {% for item in range(items) %}
-            <div class="item {% if item == 0 %} active {% endif %}">
+            {% for item in feedback_list %}
+            <div class="item {% if loop.index == 1 %} active {% endif %}">
               <div class="col-md-2 text-center">
                 <span class="glyphicon glyphicon-user"></span>
               </div>
-              <div class="col-md-8">
-                <p><b>{{ feedback_author }}</b></p>
-                <p>{{ feedback_text }}</p>
+              <div class="col-md-9">
+                <p><b>{{ item.feedback_author }}</b></p>
+                <p>{{ item.feedback_text }}</p>
               </div>
 
             </div>
@@ -28,7 +28,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-2 col-sm-2 col-xs-12 text-center">
+      <div class="col-md-2 col-sm-5 col-xs-5 col-sm-offset-1 feedback-button">
         <button type="submit" class="btn btn-default">Оставить отзыв</button>
       </div>
     </div>

@@ -17,14 +17,14 @@
         <a class="dropdown-toggle" href="#" data-toggle="dropdown">Новосибирск и область<b class="caret"></b></a>
       </div>
       <div class="request">
-        {% for comment in range(comments) %}
+        {% for comment in comment_list %}
 
         <div class="col-md-8 col-md-offset-2 comment-data">
           <!--<hr>-->
           <div class="row">
             <hr>
             <div class="col-md-6 col-sm-5 col-xs-6">
-              {{ comment_time }}
+              {{ comment.comment_time }}
             </div>
             <div class="col-md-6 col-sm-5 col-xs-5 text-right">
               <div class="to-bookmarks">
@@ -34,10 +34,10 @@
           </div>
           <div class="row">
             <div class="col-md-8">
-              <p>{{ request_text }}</p>
-              <p>{{ request_name }}</p>
+              <p>{{ comment.request_text }}</p>
+              <p>{{ comment.request_name }}</p>
               <button type="submit" class="btn btn-default">Показать телефон</button>
-              <span class="text">{{ count_views }} просмотров</span>
+              <span class="text">{{ comment.count_views }} просмотров</span>
             </div>
 
           </div>

@@ -1,25 +1,24 @@
 <div class="row">
-  <div class="col-md-9 col-md-offset-2">
-    {% for item in range(items) %}
-    <div class="col-md-9 company-info">
-      <div class="col-md-2 text-center">
-        <span class="glyphicon glyphicon-home"></span>
+  <div class="col-md-12">
+    <div class="col-md-9 col-sm-8 col-xs-10">
+      {% for company in company_list %}
+      <div class="col-md-9 col-sm-10 col-xs-10 company-info col-md-offset-3">
+        <div class="col-md-2 col-sm-4 col-xs-4 text-center">
+          <span class="glyphicon glyphicon-home"></span>
+        </div>
+        <div class="col-md-7 col-sm-6 col-xs-6">
+          <h4>{{ company.company }}</h4>
+          <p>{{ company.working_place }}</p>
+          <p>{{ company.production }}</p>
+          <p>{{ company.address }}</p>
+          <p>{{ company.phone }}</p>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4>{{ company }}</h4>
-        <p>{{ working_place }}</p>
-        <p>{{ production }}</p>
-        <p>{{ address }}</p>
-        <p>{{ phone }}</p>
-      </div>
-
+      {% endfor %}
     </div>
-    {% if item < 1%}
-    <div class="col-md-2">
+    <div class="col-md-1 col-sm-2 col-xs-6 text-center">
       <button type="submit" class="btn btn-default">Оставить заявку</button>
     </div>
-    {% endif %}
-    {% endfor %}
   </div>
   <div class="col-md-4 col-md-offset-4 text-center">
     <nav aria-label="Все заявки">

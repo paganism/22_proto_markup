@@ -12,13 +12,17 @@
 <body>
 <header id="header" class="header">
   <nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Регион: Новосибирск и область <b
-          class="caret"></b></a>
-        <ul class="dropdown-menu regions"></ul>
-      </li>
-    </ul>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Регион: Новосибирск и область <b
+            class="caret"></b></a>
+          <ul class="dropdown-menu regions">
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -107,7 +111,19 @@
 <script src="../static/js/bootstrap.min.js"></script>
 <script src="../static/js/bootstrap-notify.min.js"></script>
 <script src="../static/js/main.js"></script>
-
-
+<!-- template bellow is used in main.js -->
+<script type="text/template" id="popup-template">
+  <div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">
+    <button type="button" aria-hidden="true" class="close" data-notify="dismiss"></button>
+    <span data-notify="icon"></span>
+    <span data-notify="title">Ваш регион: <b>{1}</b></span>
+    <div class="text-center"><span data-notify="message">{2}</span></div>
+    <div class="text-center">
+      <a class="btn btn-info btn-sm" data-notify="dismiss">Да</a>
+      <span>&nbsp;</span>
+      <a class="btn btn-info btn-sm" data-notify="dismiss" id="button_error_location">Нет</a>
+    </div>
+  </div>
+</script>
 </body>
 </html>
